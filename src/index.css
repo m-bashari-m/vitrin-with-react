@@ -4,5 +4,11 @@
 
 @font-face {
   font-family: "vazir";
-  src: url("../public/fonts/Vazir.ttf");
+  src: url("./assets/Vazir.ttf");
+}
+
+@layer {
+  .rtl-direction {
+    direction: rtl;
+  }
 }
