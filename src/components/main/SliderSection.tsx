@@ -21,17 +21,18 @@ const SliderSection: React.FC<SliderSectionProps> = (props) => {
     slidesToShow: isXs ? 4 : isSm ? 5 : isMd ? 6 : isLg ? 5 : 8,
     slidesToScroll: isXs ? 2 : isSm ? 2 : isMd ? 3 : isLg ? 2 : 5,
     lazyload: "ondemand",
+    arrows: false,
   };
 
   return (
-    <section className="w-full">
+    <section className="w-full ">
       <SliderHeader
         sliderTitle={props.sliderTitle}
         showAllHref={props.showAllHref}
       />
       {/* Main content of the slider which includes some cards which are linkes*/}
 
-      <Slider className="px-2" {...settings}>
+      <Slider className="px-2 mb-4" {...settings}>
         {props.children}
       </Slider>
     </section>

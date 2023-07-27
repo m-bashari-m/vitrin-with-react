@@ -4,7 +4,7 @@ const Navbar: React.FC = () => {
   return (
     <nav
       id="navbar"
-      className="hidden md:bg-white md:flex justify-center items-center md:w-screen md:h-[60px] transition-all duration-500"
+      className="hidden  md:flex justify-center items-center md:w-screen md:h-[60px] transition-all duration-500 bg-gray-100"
     >
       <div className="w-full mx-auto flex justify-between items-center max-w-[575px] sm:max-w-[800px]">
         <ul className="text-sm font-bold flex gap-6 w-full justify-center">
