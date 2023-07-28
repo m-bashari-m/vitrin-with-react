@@ -1,7 +1,26 @@
-export const offers = [
+interface Offer {
+  id: string;
+  showAll: string;
+  banner?: {
+    image: string;
+    alt: string;
+  };
+  data: {
+    id: number;
+    image: string;
+    alt: string;
+    title: string;
+  }[];
+}
+
+export const offers: Offer[] = [
   {
     id: "مذهبی",
     showAll: "#",
+    banner: {
+      image: "./src/images/banners/ezn-aza.webp",
+      alt: "A small banner",
+    },
     data: [
       {
         id: 1,
@@ -68,6 +87,10 @@ export const offers = [
   {
     id: "پرفروش هفته",
     showAll: "#",
+    banner: {
+      image: "./src/images/banners/kartoonak.webp",
+      alt: "A small banner",
+    },
     data: [
       {
         id: 1,
@@ -134,6 +157,10 @@ export const offers = [
   {
     id: "سبک زندگی",
     showAll: "#",
+    banner: {
+      image: "./src/images/banners/majara-jooiie.webp",
+      alt: "A small banner",
+    },
     data: [
       {
         id: 1,
@@ -200,6 +227,10 @@ export const offers = [
   {
     id: "اخبار",
     showAll: "#",
+    banner: {
+      image: "./src/images/banners/sobhaneh-ketab.webp",
+      alt: "A small banner",
+    },
     data: [
       {
         id: 1,
@@ -266,6 +297,10 @@ export const offers = [
   {
     id: "تبلیغات",
     showAll: "#",
+    banner: {
+      image: "./src/images/banners/modiran-kanal.webp",
+      alt: "A small banner",
+    },
     data: [
       {
         id: 1,
@@ -399,43 +434,108 @@ export const offers = [
 
 export const categories = [
   {
-    image: "./images/categories/film-va-serial.png",
+    id: "1",
+    image: "./src/images/categories/film-va-serial.png",
     title: "فیلم و سریال",
     alt: "Movies and Series",
   },
   {
-    image: "./images/categories/film-va-serial.png",
+    id: "2",
+    image: "./src/images/categories/film-va-serial.png",
     title: " سریال",
     alt: "Movies and Series",
   },
   {
-    image: "./images/categories/film-va-serial.png",
+    id: "3",
+    image: "./src/images/categories/film-va-serial.png",
     title: "فیلم و سریال",
     alt: "Movies and Series",
   },
   {
-    image: "./images/categories/film-va-serial.png",
+    id: "4",
+    image: "./src/images/categories/film-va-serial.png",
     title: "فیلم و سریال",
     alt: "Movies and Series",
   },
   {
-    image: "./images/categories/film-va-serial.png",
+    id: "5",
+    image: "./src/images/categories/film-va-serial.png",
     title: "فیلم و سریال",
     alt: "Movies and Series",
   },
   {
-    image: "./images/categories/film-va-serial.png",
+    id: "6",
+    image: "./src/images/categories/film-va-serial.png",
     title: "فیلم و سریال",
     alt: "Movies and Series",
   },
   {
-    image: "./images/categories/film-va-serial.png",
+    id: "7",
+    image: "./src/images/categories/film-va-serial.png",
     title: " سریال",
     alt: "Movies and Series",
   },
   {
-    image: "./images/categories/film-va-serial.png",
+    id: "8",
+    image: "./src/images/categories/film-va-serial.png",
     title: "فیلم و سریال",
     alt: "Movies and Series",
+  },
+];
+
+export const best = [
+  {
+    id: "1",
+    image: "./src/images/relegious/avaieh-esgh.jpeg",
+    imageAlt: "offer image",
+    href: "#",
+    title: "آوای عشق",
+    details:
+      "لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. ",
+  },
+  {
+    id: "2",
+    image: "./src/images/relegious/avaieh-esgh.jpeg",
+    imageAlt: "offer image",
+    href: "#",
+    title: "آوای عشق",
+    details:
+      "لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. ",
+  },
+  {
+    id: "3",
+    image: "./src/images/relegious/avaieh-esgh.jpeg",
+    imageAlt: "offer image",
+    href: "#",
+    title: "آوای عشق",
+    details:
+      "لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. ",
+  },
+  {
+    id: "4",
+    image: "./src/images/relegious/avaieh-esgh.jpeg",
+    imageAlt: "offer image",
+    href: "#",
+    title: "آوای عشق",
+    details:
+      "لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. ",
+  },
+  {
+    id: "5",
+    image: "./src/images/relegious/avaieh-esgh.jpeg",
+    imageAlt: "offer image",
+    href: "#",
+    title: "آوای عشق",
+    details:
+      "لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. ",
+  },
+  {
+    id: "6",
+    image: "./src/images/relegious/avaieh-esgh.jpeg",
+    imageAlt: "offer image",
+    href: "#",
+    title: "آوای عشق",
+    details:
+      "لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. ",
   },
 ];

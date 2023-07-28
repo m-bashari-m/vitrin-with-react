@@ -22,9 +22,8 @@ const BannerSlider: React.FC = () => {
           ۳ / ۱
         </div>
         <img
-          src="./src/images/banners/Kash-Karbala.jpg"
+          src="./src/images/banners/Kash-Karbala.webp"
           alt="A banner"
-          className="md:rounded-3xl"
           draggable="false"
         />
       </a>
@@ -33,9 +32,8 @@ const BannerSlider: React.FC = () => {
           ۳ / ۲
         </div>
         <img
-          src="./src/images/banners/Ya-Hossein.jpg"
+          src="./src/images/banners/Ya-Hossein.webp"
           alt="A banner"
-          className="md:rounded-3xl"
           draggable="false"
         />
       </a>
@@ -44,9 +42,8 @@ const BannerSlider: React.FC = () => {
           ۳ / ۳
         </div>
         <img
-          src="./src/images/banners/radio.jpg"
+          src="./src/images/banners/radio.webp"
           alt="A banner"
-          className="md:rounded-3xl"
           draggable="false"
         />
       </a>

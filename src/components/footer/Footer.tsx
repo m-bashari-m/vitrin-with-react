@@ -6,7 +6,7 @@ import wwwIcon from "../../images/icons/globe2.svg";
 
 const Footer: React.FC = () => {
   return (
-    <footer className="flex bg-gray-100 w-screen h-32 justify-center items-center">
+    <footer className="flex bg-gray-100 w-full h-32 justify-center items-center">
       <div className="flex flex-col sm:flex-row items-center justify-between w-11/12 max-w-3xl">
         <div className="flex gap-5 mb-3 ml-3 sm:mb-0">
           <FooterIcon href="#" alt="twitter icon" iconSrc={twitterIcon} />
