@@ -1,5 +1,6 @@
 import { offers, categories } from "../../data/data";
 import BannerSlider from "./BannerSlider";
+import Category from "./Category";
 import SliderCard from "./SliderCard";
 import SliderSection from "./SliderSection";
 
@@ -9,8 +10,37 @@ const Main: React.FC = () => {
       <main className="w-full my-4 mt-32 sm:mt-[130px] md:w-[552px] lg:w-[800px] bg-white flex justify-center flex-col items-center rounded-3xl overflow-visible md:overflow-hidden">
         <BannerSlider />
 
-        {offers.map((offer) => (
-          <SliderSection showAllHref="#" sliderTitle={offer.id} key={offer.id}>
+        {/* Relegious Section */}
+        <SliderSection
+          showAllHref={offers[0].showAll}
+          sliderTitle={offers[0].id}
+        >
+          {offers[0].data.map((data) => (
+            <SliderCard
+              key={data.id}
+              cardSrc={data.image}
+              title={data.title}
+              alt={data.alt}
+            />
+          ))}
+        </SliderSection>
+
+        <section className="px-5 my-4 justify-start grid grid-cols-4 gap-2">
+          {categories.map((category) => (
+            <Category
+              image={category.image}
+              alt={category.alt}
+              title={category.title}
+            />
+          ))}
+        </section>
+
+        {offers.slice(1, offers.length + 1).map((offer) => (
+          <SliderSection
+            showAllHref={offer.showAll}
+            sliderTitle={offer.id}
+            key={offer.id}
+          >
             {offer.data.map((data) => (
               <SliderCard
                 key={data.id}

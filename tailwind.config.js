@@ -12,6 +12,9 @@ export default {
       fontFamily: {
         vazir: ["vazir", "sans-serif"],
       },
+      borderRadius: {
+        "4xl": "25%",
+      },
     },
   },
   plugins: [],

@@ -399,42 +399,42 @@ export const offers = [
 
 export const categories = [
   {
-    image: "./images/categories/film-va-serial.png",
+    image: "./src/images/categories/film-va-serial.png",
     title: "فیلم و سریال",
     alt: "Movies and Series",
   },
   {
-    image: "./images/categories/film-va-serial.png",
+    image: "./src/images/categories/film-va-serial.png",
     title: " سریال",
     alt: "Movies and Series",
   },
   {
-    image: "./images/categories/film-va-serial.png",
+    image: "./src/images/categories/film-va-serial.png",
     title: "فیلم و سریال",
     alt: "Movies and Series",
   },
   {
-    image: "./images/categories/film-va-serial.png",
+    image: "./src/images/categories/film-va-serial.png",
     title: "فیلم و سریال",
     alt: "Movies and Series",
   },
   {
-    image: "./images/categories/film-va-serial.png",
+    image: "./src/images/categories/film-va-serial.png",
     title: "فیلم و سریال",
     alt: "Movies and Series",
   },
   {
-    image: "./images/categories/film-va-serial.png",
+    image: "./src/images/categories/film-va-serial.png",
     title: "فیلم و سریال",
     alt: "Movies and Series",
   },
   {
-    image: "./images/categories/film-va-serial.png",
+    image: "./src/images/categories/film-va-serial.png",
     title: " سریال",
     alt: "Movies and Series",
   },
   {
-    image: "./images/categories/film-va-serial.png",
+    image: "./src/images/categories/film-va-serial.png",
     title: "فیلم و سریال",
     alt: "Movies and Series",
   },

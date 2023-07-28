@@ -8,7 +8,7 @@ const Header: React.FC = () => {
   const [isWide, setIsWide] = useMedia("(min-width: 768px)");
 
   return (
-    <header className="flex flex-col fixed z-10 w-full">
+    <header className="flex flex-col fixed z-20 w-full">
       {!isWide ? <HeaderAds setCloseAds={setIsWide} /> : <HeaderBanner />}
 
       <SearchBar />
