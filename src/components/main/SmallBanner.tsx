@@ -7,8 +7,13 @@ interface SmallBannerProps {
 
 const SmallBanner: React.FC<SmallBannerProps> = (props) => {
   return (
-    <div className="my-2 mb-8 px-5">
-      <img src={props.image} alt={props.alt} loading="lazy" />
+    <div className="my-2 mb-4 px-5 hover:cursor-pointer w-full">
+      <img
+        src={props.image}
+        alt={props.alt}
+        loading="lazy"
+        className="object-containe w-full"
+      />
     </div>
   );
 };

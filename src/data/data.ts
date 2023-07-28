@@ -1,10 +1,25 @@
-export const offers = [
+interface Offer {
+  id: string;
+  showAll: string;
+  banner?: {
+    image: string;
+    alt: string;
+  };
+  data: {
+    id: number;
+    image: string;
+    alt: string;
+    title: string;
+  }[];
+}
+
+export const offers: Offer[] = [
   {
     id: "مذهبی",
     showAll: "#",
     banner: {
-      image: "./src/images/banners/ezn-aza.png",
-      alt: "Aza va taviz parcham",
+      image: "./src/images/banners/ezn-aza.webp",
+      alt: "A small banner",
     },
     data: [
       {
@@ -73,8 +88,8 @@ export const offers = [
     id: "پرفروش هفته",
     showAll: "#",
     banner: {
-      image: "./src/images/banners/ezn-aza.png",
-      alt: "Aza va taviz parcham",
+      image: "./src/images/banners/kartoonak.webp",
+      alt: "A small banner",
     },
     data: [
       {
@@ -143,8 +158,8 @@ export const offers = [
     id: "سبک زندگی",
     showAll: "#",
     banner: {
-      image: "./src/images/banners/ezn-aza.png",
-      alt: "Aza va taviz parcham",
+      image: "./src/images/banners/majara-jooiie.webp",
+      alt: "A small banner",
     },
     data: [
       {
@@ -213,8 +228,8 @@ export const offers = [
     id: "اخبار",
     showAll: "#",
     banner: {
-      image: "./src/images/banners/ezn-aza.png",
-      alt: "Aza va taviz parcham",
+      image: "./src/images/banners/sobhaneh-ketab.webp",
+      alt: "A small banner",
     },
     data: [
       {
@@ -283,8 +298,8 @@ export const offers = [
     id: "تبلیغات",
     showAll: "#",
     banner: {
-      image: "./src/images/banners/ezn-aza.png",
-      alt: "Aza va taviz parcham",
+      image: "./src/images/banners/modiran-kanal.webp",
+      alt: "A small banner",
     },
     data: [
       {
@@ -352,10 +367,6 @@ export const offers = [
   {
     id: "سروش پلاس",
     showAll: "#",
-    banner: {
-      image: "./src/images/banners/ezn-aza.png",
-      alt: "Aza va taviz parcham",
-    },
     data: [
       {
         id: 1,
@@ -423,41 +434,49 @@ export const offers = [
 
 export const categories = [
   {
+    id: "1",
     image: "./src/images/categories/film-va-serial.png",
     title: "فیلم و سریال",
     alt: "Movies and Series",
   },
   {
+    id: "2",
     image: "./src/images/categories/film-va-serial.png",
     title: " سریال",
     alt: "Movies and Series",
   },
   {
+    id: "3",
     image: "./src/images/categories/film-va-serial.png",
     title: "فیلم و سریال",
     alt: "Movies and Series",
   },
   {
+    id: "4",
     image: "./src/images/categories/film-va-serial.png",
     title: "فیلم و سریال",
     alt: "Movies and Series",
   },
   {
+    id: "5",
     image: "./src/images/categories/film-va-serial.png",
     title: "فیلم و سریال",
     alt: "Movies and Series",
   },
   {
+    id: "6",
     image: "./src/images/categories/film-va-serial.png",
     title: "فیلم و سریال",
     alt: "Movies and Series",
   },
   {
+    id: "7",
     image: "./src/images/categories/film-va-serial.png",
     title: " سریال",
     alt: "Movies and Series",
   },
   {
+    id: "8",
     image: "./src/images/categories/film-va-serial.png",
     title: "فیلم و سریال",
     alt: "Movies and Series",

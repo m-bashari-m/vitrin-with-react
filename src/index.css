@@ -28,8 +28,4 @@
   .rtl-direction {
     direction: rtl;
   }
-
-  .on-select {
-    user-select: none;
-  }
 }

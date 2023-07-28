@@ -12,8 +12,6 @@ const Main: React.FC = () => {
       <main className="w-full my-4 mt-32 sm:mt-[130px] md:w-[570px] lg:w-[800px] bg-white flex justify-center flex-col items-center rounded-3xl overflow-visible md:overflow-hidden">
         <BannerSlider />
 
-        <BestSection />
-
         {/* Relegious Section */}
         <SliderSection
           showAllHref={offers[0].showAll}
@@ -30,13 +28,14 @@ const Main: React.FC = () => {
         </SliderSection>
 
         <SmallBanner
-          image={offers[0].banner.image}
-          alt={offers[0].banner.alt}
+          image={offers[0].banner?.image as string}
+          alt={offers[0].banner?.alt as string}
         />
 
         <section className="px-5 my-4 justify-start grid grid-cols-4 gap-2">
           {categories.map((category) => (
             <Category
+              key={category.id}
               image={category.image}
               alt={category.alt}
               title={category.title}
@@ -44,12 +43,14 @@ const Main: React.FC = () => {
           ))}
         </section>
 
-        {offers.slice(1, offers.length + 1).map((offer) => (
+        <BestSection />
+
+        {offers.slice(1, offers.length + 1).map((offer, index) => (
           <>
             <SliderSection
+              key={offer.id}
               showAllHref={offer.showAll}
               sliderTitle={offer.id}
-              key={offer.id}
             >
               {offer.data.map((data) => (
                 <SliderCard
@@ -61,7 +62,13 @@ const Main: React.FC = () => {
               ))}
             </SliderSection>
 
-            <SmallBanner image={offer.banner.image} alt={offer.banner.alt} />
+            {offer.banner && (
+              <SmallBanner
+                key={index}
+                image={offer.banner.image}
+                alt={offer.banner.alt}
+              />
+            )}
           </>
         ))}
       </main>
