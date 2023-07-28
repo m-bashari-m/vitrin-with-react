@@ -9,8 +9,8 @@ interface CategoryProps {
 const Category: React.FC<CategoryProps> = (props) => {
   return (
     <a className="hover:cursor-pointer flex items-center flex-col">
-      <div className="relative group">
-        <div className="absolute w-full h-full opacity-0 group-hover:opacity-20 transition-all duration-500 rounded-4xl hover:bg-gradient-to-br from-blue-100 to-blue-950 z-10"></div>
+      <div className="relative group rounded-4xl overflow-hidden">
+        <div className="absolute -top-[100px] -right-[100px] w-[400px] h-[400px] opacity-20 group-hover:opacity-30 transition duration-500  rounded-4xl hover:rotate-180 z-10 bg-gradient-to-bl from-blue-500 to-yellow-500"></div>
         <img
           src={props.image}
           alt={props.alt}
