@@ -2,6 +2,10 @@ export const offers = [
   {
     id: "مذهبی",
     showAll: "#",
+    banner: {
+      image: "./src/images/banners/ezn-aza.png",
+      alt: "Aza va taviz parcham",
+    },
     data: [
       {
         id: 1,
@@ -68,6 +72,10 @@ export const offers = [
   {
     id: "پرفروش هفته",
     showAll: "#",
+    banner: {
+      image: "./src/images/banners/ezn-aza.png",
+      alt: "Aza va taviz parcham",
+    },
     data: [
       {
         id: 1,
@@ -134,6 +142,10 @@ export const offers = [
   {
     id: "سبک زندگی",
     showAll: "#",
+    banner: {
+      image: "./src/images/banners/ezn-aza.png",
+      alt: "Aza va taviz parcham",
+    },
     data: [
       {
         id: 1,
@@ -200,6 +212,10 @@ export const offers = [
   {
     id: "اخبار",
     showAll: "#",
+    banner: {
+      image: "./src/images/banners/ezn-aza.png",
+      alt: "Aza va taviz parcham",
+    },
     data: [
       {
         id: 1,
@@ -266,6 +282,10 @@ export const offers = [
   {
     id: "تبلیغات",
     showAll: "#",
+    banner: {
+      image: "./src/images/banners/ezn-aza.png",
+      alt: "Aza va taviz parcham",
+    },
     data: [
       {
         id: 1,
@@ -332,6 +352,10 @@ export const offers = [
   {
     id: "سروش پلاس",
     showAll: "#",
+    banner: {
+      image: "./src/images/banners/ezn-aza.png",
+      alt: "Aza va taviz parcham",
+    },
     data: [
       {
         id: 1,

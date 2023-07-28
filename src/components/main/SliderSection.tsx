@@ -32,7 +32,7 @@ const SliderSection: React.FC<SliderSectionProps> = (props) => {
       />
       {/* Main content of the slider which includes some cards which are linkes*/}
 
-      <Slider className="px-2 mb-4" {...settings}>
+      <Slider className="px-2 mb-4 mx-2" {...settings}>
         {props.children}
       </Slider>
     </section>

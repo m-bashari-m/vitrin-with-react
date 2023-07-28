@@ -10,7 +10,7 @@ const Category: React.FC<CategoryProps> = (props) => {
   return (
     <a className="hover:cursor-pointer flex items-center flex-col">
       <div className="relative group">
-        <div className="absolute w-full h-full opacity-0 group-hover:opacity-20 transition-all duration-300 rounded-4xl bg-blue-800 z-10"></div>
+        <div className="absolute w-full h-full opacity-0 group-hover:opacity-20 transition-all duration-500 rounded-4xl hover:bg-gradient-to-br from-blue-100 to-blue-950 z-10"></div>
         <img
           src={props.image}
           alt={props.alt}

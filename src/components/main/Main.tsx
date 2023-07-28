@@ -4,6 +4,7 @@ import BestSection from "./BestSection";
 import Category from "./Category";
 import SliderCard from "./SliderCard";
 import SliderSection from "./SliderSection";
+import SmallBanner from "./SmallBanner";
 
 const Main: React.FC = () => {
   return (
@@ -28,6 +29,11 @@ const Main: React.FC = () => {
           ))}
         </SliderSection>
 
+        <SmallBanner
+          image={offers[0].banner.image}
+          alt={offers[0].banner.alt}
+        />
+
         <section className="px-5 my-4 justify-start grid grid-cols-4 gap-2">
           {categories.map((category) => (
             <Category
@@ -39,20 +45,24 @@ const Main: React.FC = () => {
         </section>
 
         {offers.slice(1, offers.length + 1).map((offer) => (
-          <SliderSection
-            showAllHref={offer.showAll}
-            sliderTitle={offer.id}
-            key={offer.id}
-          >
-            {offer.data.map((data) => (
-              <SliderCard
-                key={data.id}
-                cardSrc={data.image}
-                title={data.title}
-                alt={data.alt}
-              />
-            ))}
-          </SliderSection>
+          <>
+            <SliderSection
+              showAllHref={offer.showAll}
+              sliderTitle={offer.id}
+              key={offer.id}
+            >
+              {offer.data.map((data) => (
+                <SliderCard
+                  key={data.id}
+                  cardSrc={data.image}
+                  title={data.title}
+                  alt={data.alt}
+                />
+              ))}
+            </SliderSection>
+
+            <SmallBanner image={offer.banner.image} alt={offer.banner.alt} />
+          </>
         ))}
       </main>
     </div>

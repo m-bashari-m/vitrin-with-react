@@ -7,7 +7,7 @@ interface SliderCardProps {
 const SliderCard: React.FC<SliderCardProps> = (props) => {
   return (
     <div className="w-full flex justify-end">
-      <a className="flex flex-col justify-center mr-2 self-start flex-grow-0 flex-shrink-0 flex-auto  w-fit">
+      <a className="flex flex-col justify-center mr-2 self-start flex-grow-0 flex-shrink-0 flex-auto hover:cursor-pointer w-fit">
         <img
           src={props.cardSrc}
           alt={props.alt}
