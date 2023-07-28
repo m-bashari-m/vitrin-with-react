@@ -24,7 +24,6 @@ const BannerSlider: React.FC = () => {
         <img
           src="./src/images/banners/Kash-Karbala.jpg"
           alt="A banner"
-          className="md:rounded-3xl"
           draggable="false"
         />
       </a>
@@ -35,7 +34,6 @@ const BannerSlider: React.FC = () => {
         <img
           src="./src/images/banners/Ya-Hossein.jpg"
           alt="A banner"
-          className="md:rounded-3xl"
           draggable="false"
         />
       </a>
@@ -46,7 +44,6 @@ const BannerSlider: React.FC = () => {
         <img
           src="./src/images/banners/radio.jpg"
           alt="A banner"
-          className="md:rounded-3xl"
           draggable="false"
         />
       </a>

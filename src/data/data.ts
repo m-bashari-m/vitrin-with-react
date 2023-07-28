@@ -439,3 +439,60 @@ export const categories = [
     alt: "Movies and Series",
   },
 ];
+
+export const best = [
+  {
+    id: "1",
+    image: "./src/images/relegious/avaieh-esgh.jpeg",
+    imageAlt: "offer image",
+    href: "#",
+    title: "آوای عشق",
+    details:
+      "لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. ",
+  },
+  {
+    id: "2",
+    image: "./src/images/relegious/avaieh-esgh.jpeg",
+    imageAlt: "offer image",
+    href: "#",
+    title: "آوای عشق",
+    details:
+      "لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. ",
+  },
+  {
+    id: "3",
+    image: "./src/images/relegious/avaieh-esgh.jpeg",
+    imageAlt: "offer image",
+    href: "#",
+    title: "آوای عشق",
+    details:
+      "لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. ",
+  },
+  {
+    id: "4",
+    image: "./src/images/relegious/avaieh-esgh.jpeg",
+    imageAlt: "offer image",
+    href: "#",
+    title: "آوای عشق",
+    details:
+      "لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. ",
+  },
+  {
+    id: "5",
+    image: "./src/images/relegious/avaieh-esgh.jpeg",
+    imageAlt: "offer image",
+    href: "#",
+    title: "آوای عشق",
+    details:
+      "لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. ",
+  },
+  {
+    id: "6",
+    image: "./src/images/relegious/avaieh-esgh.jpeg",
+    imageAlt: "offer image",
+    href: "#",
+    title: "آوای عشق",
+    details:
+      "لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. ",
+  },
+];

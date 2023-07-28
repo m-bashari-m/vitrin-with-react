@@ -7,8 +7,29 @@
   src: url("./assets/Vazir.ttf");
 }
 
-@layer {
+@layer base {
+  ::selection {
+    background-color: transparent;
+    color: inherit;
+  }
+
+  ::-moz-selection {
+    background-color: transparent;
+    color: inherit;
+  }
+
+  * {
+    -ms-user-select: none;
+    user-select: none;
+  }
+}
+
+@layer components {
   .rtl-direction {
     direction: rtl;
+  }
+
+  .on-select {
+    user-select: none;
   }
 }

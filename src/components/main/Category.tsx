@@ -16,6 +16,7 @@ const Category: React.FC<CategoryProps> = (props) => {
           alt={props.alt}
           draggable={false}
           loading="lazy"
+          className="select-none"
         />
       </div>
       <p className="flex justify-between my-2 text-sm sm:text-base px-2">

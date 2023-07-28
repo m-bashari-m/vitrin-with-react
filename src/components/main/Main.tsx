@@ -1,5 +1,6 @@
 import { offers, categories } from "../../data/data";
 import BannerSlider from "./BannerSlider";
+import BestSection from "./BestSection";
 import Category from "./Category";
 import SliderCard from "./SliderCard";
 import SliderSection from "./SliderSection";
@@ -7,8 +8,10 @@ import SliderSection from "./SliderSection";
 const Main: React.FC = () => {
   return (
     <div className="flex justify-center w-full">
-      <main className="w-full my-4 mt-32 sm:mt-[130px] md:w-[552px] lg:w-[800px] bg-white flex justify-center flex-col items-center rounded-3xl overflow-visible md:overflow-hidden">
+      <main className="w-full my-4 mt-32 sm:mt-[130px] md:w-[570px] lg:w-[800px] bg-white flex justify-center flex-col items-center rounded-3xl overflow-visible md:overflow-hidden">
         <BannerSlider />
+
+        <BestSection />
 
         {/* Relegious Section */}
         <SliderSection
