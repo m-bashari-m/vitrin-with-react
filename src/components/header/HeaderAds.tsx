@@ -1,4 +1,3 @@
-import xSymbol from "../../images/icons/x-symbol.svg";
 import sPlusIcon from "../../images/icons/soroushPlusLogo.svg";
 import React from "react";
 
