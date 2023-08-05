@@ -1,27 +1,45 @@
-# React + TypeScript + Vite
+## Running the Project with Docker
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
-
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
-
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
-
-- Configure the top-level `parserOptions` property like this:
-
-```js
-   parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-   },
+### Development Environment
+1. Clone the project
+```bash
+git clone https://github.com/m-bashari-m/vitrin-with-react.git
 ```
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+2. Make sure you have Docker installed on your machine.
+3. Run Docker Engine.
+4. Open a terminal and navigate to the project directory.
+```bash
+cd .\docker\dev
+```
+5. Run the following command to start the development server using Docker:
+
+```bash
+docker-compose up --build
+```
+6. Access the app by opening your browser and navigating to http://localhost:3000.
+
+
+### Production Environment
+
+1. Clone the project
+```bash
+git clone https://github.com/m-bashari-m/vitrin-with-react.git
+```
+2. Make sure you have Docker installed on your machine.
+3. Run Docker Engine.
+4. Open a terminal and navigate to the project directory.
+```bash
+cd .\docker\production
+```
+
+5. Run the following command to build and start the production-ready app using Docker:
+
+```bash
+docker-compose up
+```
+6. Access the app by opening your browser and navigating to http://localhost:8080
+
+Enjoy !
+
+
