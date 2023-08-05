@@ -10,8 +10,9 @@ interface BestCardProps {
 
 const BestCard: React.FC<BestCardProps> = (props) => {
   return (
-    <div className="p-1">
+    <div draggable={false} className="p-1">
       <a
+        draggable={false}
         href={props.href}
         className="flex flex-row-reverse p-3 bg-slate-200 rounded-3xl items-center justify-between w-full border border-white transition duration-300 group hover:bg-slate-300 bg-gradient-to-r from-slate-200 via-slate-300 to-slate-200"
       >

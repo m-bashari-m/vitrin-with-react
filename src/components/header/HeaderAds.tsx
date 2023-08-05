@@ -6,7 +6,7 @@ const HeaderAds: React.FC = () => {
     <a
       id="ads"
       href="#"
-      className="bg-gray-100 md:hidden w-screen h-16 flex justify-between flex-row items-center px-4 py-3"
+      className="bg-gray-100 md:hidden w-full h-16 flex justify-between flex-row items-center px-4 py-3"
     >
       <div className="flex flex-row items-center">
         <img
