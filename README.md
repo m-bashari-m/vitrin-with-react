@@ -1,9 +1,9 @@
-# Soroush Page Builder
+# Vitrin With React
 
 ## How To Run?
 1. Clone the project
 ```bash
-https://github.com/mostafagh79/Page-Builder-React.git
+https://github.com/m-bashari-m/vitrin-with-react.git
 ```
 
 2. Make sure you have Docker installed on your machine.
